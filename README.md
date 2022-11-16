@@ -51,12 +51,6 @@ This regex does not use any flags.
 
 This regex does not use any character escapes.
 
-### **Testing**
-
-The regex works when tested on a single valid hex color code:
-
-![](Assets/Regex.jpg)
-
 ## Author
 
 https://github.com/nookworth
