@@ -1,11 +1,10 @@
-# Title (replace with your title)
+# Regex: Hex Color Values
 
-Introductory paragraph (replace this with your text)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The regular expression I have chosen is for hexadecimal color values like those used in CSS files. There are currently 16,777,216 different colors available in HTML, so hexadecimal digits are used since they have a higher information density than decimal digits. Color values can be expressed in two varieties: normal hexadecimal values, like #4169E1 for Royal Blue, and shorthand versions, such as #00F for Blue. 00F is shorthand for 0000FF. Shorthand only works when both digits are the same in each duplet.
 
 ## Summary
 
-<!-- Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary. -->
-`/^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/` hex color value regex
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The regex for hexadecimal color values is: `/^#?([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$/`. This regex will search a text for any appearances of hex color values of both the longhand and shorthand versions, whether or not they include the pound sign in front.
 
 ## Table of Contents
 
@@ -22,10 +21,11 @@ Introductory paragraph (replace this with your text)
 
 ### **Anchors**
 
-The anchors `^` and `$` are used to specify the beginning and end of the string, respectively. 
+The anchors `^` and `$` are used to specify the beginning and end of the string, respectively. These will ensure that only appearances of color values that are *not* merely substrings of words will be returned.
+
 ### **Quantifiers**
 
-In this snippet: `[a-fA-F0-9]{6}` the {6} specifies that the preceding character class should be repeated six times. In this one: `[a-fA-F0-9]{3}` it means the character class should be repeated three times. Normally, curly braces are in the following format: {min, max}, but when the comma and max are excluded, it searches for the exact number of repetitions of min.
+In this snippet: `[a-fA-F0-9]{6}` the {6} specifies that the preceding character class should be repeated six times. In this one: `[a-fA-F0-9]{3}` it means the character class should be repeated three times. Normally, curly braces are in the following format: {min, max}, but when the comma and max are excluded, it searches for the exact number of repetitions of min. Also, the question mark in `^#?` means that the # literal can appear either 0 or 1 times. 
 
 ### **Grouping Constructs**
 
@@ -37,11 +37,11 @@ This part of the regex: `([a-fA-F0-9]{6}|[a-fA-F0-9]{3})` is grouped together us
 
 ### **Character Classes**
 
-`[a-fA-F0-9]` is a character class inside a bracket expression. This shows the regex engine to search for *a single character* that meets any of these criteria: lowercase letters from a to f, uppercase letters from A to F, or digits from 0 to 9. 
+`[a-fA-F0-9]` is a character class inside a bracket expression. This shows the regex engine to search for _a single character_ that meets any of these criteria: lowercase letters from a to f, uppercase letters from A to F, or digits from 0 to 9.
 
 ### **The OR Operator**
 
-`[a-fA-F0-9]{6}|[a-fA-F0-9]{3}` uses the OR operator in the form of `|`. Since RGB hex values can be written in three-digit form sometimes (i.e., the shorthand for 00FF00 is 0F0), the three-digit alternative is useful, even though it could potentially return three-letter words with letters from A to F. 
+`[a-fA-F0-9]{6}|[a-fA-F0-9]{3}` uses the OR operator in the form of `|`. Since RGB hex values can be written in three-digit form sometimes (i.e., the shorthand for 00FF00 is 0F0), the three-digit alternative is useful, even though it could potentially return three-letter words with letters from A to F.
 
 ### **Flags**
 
@@ -50,7 +50,14 @@ This regex does not use any flags.
 ### **Character Escapes**
 
 This regex does not use any character escapes.
- 
+
+### **Testing**
+
+The regex works when tested on a single valid hex color code:
+
+![Alt text](../../../../../../../C:/Users/Christopher/Documents/Bootcamp/working-files/gist-template/assets/Regex.jpg)
+
+
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+https://github.com/nookworth
