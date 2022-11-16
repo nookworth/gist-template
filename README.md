@@ -21,11 +21,11 @@
 
 ### **Anchors**
 
-The anchors `^` and `$` are used to specify the beginning and end of the string, respectively. These will ensure that only appearances of color values that are *not* merely substrings of words will be returned.
+The anchors `^` and `$` are used to specify the beginning and end of the string, respectively. These will ensure that only appearances of color values that are _not_ merely substrings of words will be returned.
 
 ### **Quantifiers**
 
-In this snippet: `[a-fA-F0-9]{6}` the {6} specifies that the preceding character class should be repeated six times. In this one: `[a-fA-F0-9]{3}` it means the character class should be repeated three times. Normally, curly braces are in the following format: {min, max}, but when the comma and max are excluded, it searches for the exact number of repetitions of min. Also, the question mark in `^#?` means that the # literal can appear either 0 or 1 times. 
+In this snippet: `[a-fA-F0-9]{6}` the {6} specifies that the preceding character class should be repeated six times. In this one: `[a-fA-F0-9]{3}` it means the character class should be repeated three times. Normally, curly braces are in the following format: {min, max}, but when the comma and max are excluded, it searches for the exact number of repetitions of min. Also, the question mark in `^#?` means that the # literal can appear either 0 or 1 times.
 
 ### **Grouping Constructs**
 
@@ -55,8 +55,7 @@ This regex does not use any character escapes.
 
 The regex works when tested on a single valid hex color code:
 
-![](../../../../../../../C:/Users/Christopher/Documents/Bootcamp/working-files/gist-template/assets/Regex.jpg)
-
+![](Assets/Regex.jpg)
 
 ## Author
 
