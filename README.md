@@ -55,7 +55,7 @@ This regex does not use any character escapes.
 
 The regex works when tested on a single valid hex color code:
 
-![Alt text](../../../../../../../C:/Users/Christopher/Documents/Bootcamp/working-files/gist-template/assets/Regex.jpg)
+![](../../../../../../../C:/Users/Christopher/Documents/Bootcamp/working-files/gist-template/assets/Regex.jpg)
 
 
 ## Author
