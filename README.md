@@ -43,14 +43,6 @@ This part of the regex: `([a-fA-F0-9]{6}|[a-fA-F0-9]{3})` is grouped together us
 
 `[a-fA-F0-9]{6}|[a-fA-F0-9]{3}` uses the OR operator in the form of `|`. Since RGB hex values can be written in three-digit form sometimes (i.e., the shorthand for 00FF00 is 0F0), the three-digit alternative is useful, even though it could potentially return three-letter words with letters from A to F.
 
-### **Flags**
-
-This regex does not use any flags.
-
-### **Character Escapes**
-
-This regex does not use any character escapes.
-
 ## Author
 
 https://github.com/nookworth
